@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const createMarkdown = require('./utils/generateMarkdown');
 const fileName = "README.md";
-
 // TODO: Create an array of questions for user input
 const questions = () =>
     inquirer.prompt([
@@ -50,48 +50,36 @@ const questions = () =>
     .then((response) => {
         //Use user feedback for whatever
         console.log(response);
-        // writeToFile(fileName, response);
-        let{
-            title,
-            description,
-            // installation,
-            // usage,
-            // license,
-            // contributors,
-            // test,
-            // questions,
-            } = response;
-            console.log(response);
+        generateMarkdown(response);
+
     })
     .catch((err) => {
         console.log("Error: ", err);
     });
     
-      
-    
-    // TODO: Create a function to write README file
-function writeToFile(fileName, response) {
-    console.log(fileName, response);
-    fs.writeFile(fileName, JSON.stringify(`${response.title}\n`, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Title Added to README Generator.')
-    );
-    if(response.content === true){
-        fs.appendFile(fileName, JSON.stringify(response.content, null, '\t'), (err) =>
-        err ? console.log(err) : console.log('Table of Contents added to README Generator.')
-        );
-    }
-    else{
-        console.log("TOC not added");
-    }
-    fs.writeFile(fileName, JSON.stringify(response.description, null, '\t'), (err) =>
-    err ? console.log(err) : console.log('Title Added to README Generator.')
-  );
-
+function generateMarkdown(response){
+    fs.writeFile('generateMarkdown.js', JSON.stringify(response), (err) => {
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log("It worked");
+        }
+    });
 }
+
+
+    
+//     // TODO: Create a function to write README file
+// function writeToFile(createMarkdown, response,(err) => {
+
+// });
+
     
 // TODO: Create a function to initialize app
 function init() {
-    questions();
+    let response = questions();
+    // writeToFile(createMarkdown, response);
 }
 
 // Function call to initialize app
