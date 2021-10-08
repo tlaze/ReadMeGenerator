@@ -27,16 +27,16 @@
 
   ## Description
 
-  This application uses the command line and the inquirer dependency to ask the user a series of questions about their project. Questions include describing their project, what is needed to be installed to use the application, who contributed to the project, and more! Once the user answers the questions, a README.md file is created. The file has proper syntax and includes a Table of Contents, as well as links to which License was used. This application is versatile and able to be customized for any project. 
+  This application uses the command line, node.js, and the inquirer dependency to ask the user a series of questions about their project. Questions include describing their project, what is needed to be installed to use the application, who contributed to the project, and more! Once the user answers the questions, a README.md file is created. The file has proper syntax and includes a Table of Contents, as well as links to which License was used. This application is versatile and able to be customized for any project.
   
   ## Installation
 
-  To run this application properly, you need to install node.js, npm, and the inquirer dependency.
+  To run this application properly, you need to install node.js, npm, and inquirer dependency.
   
 
   ## Usage
   
-  While inside your project folder open up the command line. Enter the command node ("name of project file). For example: if the file name is index.js then you would write: node index.js
+  Open up the command line and navigate to your project folder. Enter node and then the name of the project file. For example if your file is named index.js then you would enter: node index.js
   
   
   ## License
@@ -52,17 +52,17 @@
   
   ## Tests
   
-  To test this application, enter On the command line run node index.js. You will be given a multiple prompts to enter and to test possible responses. in the command line
+  To test this application, enter You can test this application by entering different inputs to the question prompts. in the command line
 
-  ## ScreenShots
+  ## ScreenShot
 
-  ![Screenshots](../assets/images/markdown_img.png)
+  ![Screenshot](assets\images\screenshot.png)
 
   ## Links
 
-  Live application: This project doesn't include a live application.
+  Live application: No Live Application for this project. However you can follow this Google Drive link to watch a demo of the generator. https://drive.google.com/file/d/1_ZqUhzZmQ9EZRSOvzgRUSOAWJNwdC07B/view?usp=sharing
 
-  Project Repository: https://github.com/tlaze/readMeGenerator
+  Project Repository: https://github.com/tlaze/ReadMeGenerator
   
   
   ## Questions
@@ -71,5 +71,6 @@
   
   email: tomlazore@gmail.com
 
-  or check out my gitHub: https://github.com/tlaze
+  or check out my [GitHub](https://github.com/tlaze)
+
   
