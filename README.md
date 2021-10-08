@@ -19,7 +19,7 @@
 
   * [Tests](#tests)
 
-  * [Screenshot](#screenshot)
+  * [ScreenShots](#screenshots)
 
   * [Links](#links)
 
@@ -47,20 +47,20 @@
   
   The following helped make this project possible:
 
-  Tom Lazore - Contact Info Below
+  Tom Lazore -Contact Info Below
   
   
   ## Tests
   
-  To test this application, enter You can test this application by entering different inputs to the question prompts. in the command line
+  To test this application, enter To test this application, enter You can test this application by entering different inputs to the question prompts. in the command line in the command line
 
   ## ScreenShot
 
-  ![Screenshot](C:\Users\tl524\Desktop\ReadMeGenerator\assets\images\screenshot.png)
+  ![Screenshot](assets/images/screenshot.png)
 
   ## Links
 
-  Live application: No Live Application for this project. However you can follow this Google Drive link to watch a demo of the generator. https://drive.google.com/file/d/1_ZqUhzZmQ9EZRSOvzgRUSOAWJNwdC07B/view?usp=sharing
+  Live application: Live application: No Live Application for this project. However you can follow this Google Drive link to watch a demo of the generator. https://drive.google.com/file/d/1_ZqUhzZmQ9EZRSOvzgRUSOAWJNwdC07B/view?usp=sharing
 
   Project Repository: https://github.com/tlaze/ReadMeGenerator
   
