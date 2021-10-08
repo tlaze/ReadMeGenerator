@@ -6,13 +6,14 @@ function renderLicenseBadge(license) {
     return''
   }
   else{
-    return `![badge](https://img.shields.io/badge/license-${license}-brightgreen)`
+    return `![badge](https://img.shields.io/badge/license-${license}-brightgreen)`  //Creates a badge depending on what license user picks
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  //Links to License info depending on which one the user picks
   switch(license){
     case 'MIT':
       return 'https://choosealicense.com/licenses/mit/'
@@ -105,9 +106,9 @@ function generateMarkdown(response) {
   
   To test this application, enter ${response.tests} in the command line
 
-  ## ScreenShots
+  ## ScreenShot
 
-  ![Screenshots](${response.screenshots})
+  ![Screenshot](${response.screenshot})
 
   ## Links
 

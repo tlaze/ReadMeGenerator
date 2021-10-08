@@ -56,7 +56,7 @@
 
   ## ScreenShots
 
-  ![Screenshots](assets\images\markdown_img.png)
+  ![Screenshots](assets\images\screenshot.png)
 
   ## Links
 

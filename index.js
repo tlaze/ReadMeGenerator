@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const createMarkdown = require('./utils/generateMarkdown');
-const fileName = 'READMEex1.md';
+const fileName = 'READMEex1.md'; //Name of file that will be created and have data sent to
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -60,7 +60,7 @@ const questions = [
     {
         type: "input",
         message: "Enter the path to any screenshots (ex: ../images)",
-        name: "screenshots",
+        name: "screenshot",
     },
     {
         type: "input",
@@ -76,11 +76,10 @@ const questions = [
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
+    inquirer.prompt(questions)  //calls inquirer dependency and uses questions array as argument
     .then((response) => {
-        //Use user feedback for whatever
             console.log(response);
-            writeToFile(fileName, createMarkdown(response));
+            writeToFile(fileName, createMarkdown(response));    //Sends file name and responses to function to create file
     })
     .catch((err) => {
         console.log("Error: ", err);
@@ -91,7 +90,7 @@ function init() {
     
 // TODO: Create a function to write README file
 function writeToFile(fileName, response) {
-    fs.writeFile(fileName, response, (err) => {
+    fs.writeFile(fileName, response, (err) => {     //Creates new file and stores answers
         if(err){
             return console.log(err);
         }
