@@ -5,8 +5,7 @@ const createMarkdown = require('./utils/generateMarkdown');
 const fileName = "README.md";
 
 // TODO: Create an array of questions for user input
-const questions = () =>
-    inquirer.prompt([
+const questions = [
     {
         type: "input",
         message: "What is the title of your README project?",
@@ -28,9 +27,10 @@ const questions = () =>
     //     name: "usage",
     // },
     // {
-    //     type: "confirm",
+    //     type: "list",
     //     message: "Would you like to add an MIT License to your project?",
     //     name: "license",
+    //     choices: ["MIT"],
     // },
     // {
     //     type: "input",
@@ -47,19 +47,12 @@ const questions = () =>
     //     message: "How can users/developers contact you with any questions?",
     //     name: "questions",
     // },
-        ])
-    .then((response) => {
-        //Use user feedback for whatever
-        console.log(response);
-        writeToFile(response);
-    })
-    .catch((err) => {
-        console.log("Error: ", err);
-    });
+        ]
+
 
     
 // TODO: Create a function to write README file
-function writeToFile(response) {
+function writeToFile(fileName, response) {
     fs.writeFile(fileName, JSON.stringify(response), (err) => {
         if(err){
             console.log(err);
@@ -72,22 +65,17 @@ function writeToFile(response) {
     
 // TODO: Create a function to initialize app
 function init() {
-    let response = questions();
-    // writeToFile(createMarkdown, response);
+    inquirer.prompt(questions)
+    .then((response) => {
+        //Use user feedback for whatever
+         console.log(response);
+         writeToFile(fileName, createMarkdown(response));
+    })
+    .catch((err) => {
+        console.log("Error: ", err);
+    });
+
 }
 
 // Function call to initialize app
 init();
-
-
-/*
-Title
-Description
-table of contents
-installation
-usage
-license
-contributors
-tests
-questions
-*/
