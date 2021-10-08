@@ -1,22 +1,47 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license === 'None'){
+    console.log('No License Provided')
+    return''
+  }
+  else{
+    return `![badge](https://img.shields.io/badge/license-${license}-brightgreen)`
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  switch(license){
+    case 'MIT':
+      return 'https://choosealicense.com/licenses/mit/'
+      break;
+    case 'Apache':
+      return 'https://choosealicense.com/licenses/apache-2.0/#'
+      break;
+    case 'Mozilla':
+      return 'https://choosealicense.com/licenses/mpl-2.0/'
+      break;
+    case 'GNU':
+      return 'https://choosealicense.com/licenses/agpl-3.0/'
+      break;
+    default:
+      return '#'; 
+    
+  }
+}
+
+
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  console.log("License rendered");
   if(license === 'None'){
-    console.log("none")
-    return `This project does not contain a License.`
+    return `nobody.`
   }
   else{
-    console.log(license);
-    return `This project uses the ${license} license.`
+    return `${license}`
   }
   
 }
@@ -24,8 +49,11 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(response) {
   let projectLicense = renderLicenseSection(response.license);
+  let licenseBadge = renderLicenseBadge(response.license);
+  let licenseLink = renderLicenseLink(response.license);
   return`
 
+  ${licenseBadge}
   
   # ${response.title}
   
@@ -66,8 +94,7 @@ function generateMarkdown(response) {
   
   ## License
   
- ${projectLicense}
-  
+  This Project is licensed by [${projectLicense}](${licenseLink}).
   
   ## Contributors
   
