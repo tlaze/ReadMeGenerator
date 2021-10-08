@@ -32,8 +32,6 @@ function renderLicenseLink(license) {
   }
 }
 
-
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
@@ -109,11 +107,13 @@ function generateMarkdown(response) {
 
   ## ScreenShots
 
-  space for screenshot
+  ![Screenshots](${response.screenshots})
 
   ## Links
 
-  space for links
+  Live application: ${response.liveapp}
+
+  Project Repository: ${response.repository}
   
   
   ## Questions

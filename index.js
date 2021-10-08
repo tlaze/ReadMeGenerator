@@ -57,6 +57,21 @@ const questions = [
         message: "How do you test your application?",
         name: "tests",
     },
+    {
+        type: "input",
+        message: "Enter the path to any screenshots (ex: ../images)",
+        name: "screenshots",
+    },
+    {
+        type: "input",
+        message: "Enter the URL to the live application",
+        name: "liveapp",
+    },
+    {
+        type: "input",
+        message: "Enter the URL to the project repository",
+        name: "repository",
+    },
         ]
 
 // TODO: Create a function to initialize app
