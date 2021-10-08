@@ -19,7 +19,7 @@
 
   * [Tests](#tests)
 
-  * [ScreenShots](#screenshots)
+  * [Screenshot](#screenshot)
 
   * [Links](#links)
 
