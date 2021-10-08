@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const createMarkdown = require('./utils/generateMarkdown');
-// const fileName;
+const fileName = 'READMEex1.md';
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -80,7 +80,7 @@ function init() {
     .then((response) => {
         //Use user feedback for whatever
             console.log(response);
-            writeToFile('readMeEx.md', createMarkdown(response));
+            writeToFile(fileName, createMarkdown(response));
     })
     .catch((err) => {
         console.log("Error: ", err);

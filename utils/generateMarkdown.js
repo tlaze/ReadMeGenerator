@@ -122,7 +122,8 @@ function generateMarkdown(response) {
   
   email: ${response.userEmail}
 
-  or check out my gitHub: ${response.userGitHub}
+  or check out my [GitHub](${response.userGitHub})
+
   `;
 }
 
