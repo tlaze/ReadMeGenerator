@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const createMarkdown = require('./utils/generateMarkdown');
-const fileName = "README.md";
+// const fileName;
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Describe how you install the project.",
+        message: "What do you need to install this project?",
         name: "installation",
     },
     {
@@ -66,9 +66,9 @@ function init() {
     
 // TODO: Create a function to write README file
 function writeToFile(fileName, response) {
-    fs.writeFile(fileName, JSON.stringify(response), (err) => {
+    fs.writeFile(fileName, response, (err) => {
         if(err){
-            console.log(err);
+            return console.log(err);
         }
         else{
             console.log(`${fileName} was created`);
