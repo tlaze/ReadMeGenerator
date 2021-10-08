@@ -56,7 +56,7 @@
 
   ## ScreenShot
 
-  ![Screenshot](readMeGenerator\assets\images\screenshot.png)
+  ![Screenshot](assets\images\screenshot.png)
 
   ## Links
 
