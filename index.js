@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const createMarkdown = require('./utils/generateMarkdown');
-const fileName = 'README.md'; //Name of file that will be created and have data sent to
+const fileName = 'READMESample.md'; //Name of file that will be created and have data sent to
 
 // TODO: Create an array of questions for user input
 const questions = [
