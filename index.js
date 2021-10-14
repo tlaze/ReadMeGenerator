@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const createMarkdown = require('./utils/generateMarkdown');
-const fileName = 'README.md'; //Name of file that will be created and have data sent to
+const fileName = 'READMESample.md'; //Name of file that will be created and have data sent to
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Type in the link to your gitHub profile.",
+        message: "What is your Github Username?",
         name: "userGitHub",
     },
     {
@@ -59,7 +59,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Copy the relative path to a screenshot",
+        message: "Copy the path to a screenshot.",
         name: "screenshot",
     },
     {
