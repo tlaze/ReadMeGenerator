@@ -120,7 +120,7 @@ function generateMarkdown(response) {
 
   If you have any questions, comments, or issues feel free to contact ${response.userName} directly through
   
-  [Email](${response.userEmail})
+  Email: ${response.userEmail}
 
   or check out my [GitHub](https://github.com/${response.userGitHub})
 
