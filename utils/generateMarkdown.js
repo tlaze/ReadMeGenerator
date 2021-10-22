@@ -83,7 +83,9 @@ function generateMarkdown(response) {
   
   ## Installation
 
-  To run this application properly, you need to install ${response.installation}
+  To run this application properly, you need to install:
+  
+  ${response.installation}
   
 
   ## Usage
@@ -96,11 +98,8 @@ function generateMarkdown(response) {
   This Project is licensed by [${projectLicense}](${licenseLink}).
   
   ## Contributors
-  
-  The following helped make this project possible:
 
   ${response.contributors}
-  
   
   ## Tests
   
@@ -112,16 +111,16 @@ function generateMarkdown(response) {
 
   ## Links
 
-  Live application: ${response.liveapp}
+  [Live Application](${response.liveapp})
 
-  Project Repository: ${response.repository}
+  [Project Repository](${response.repository})
   
   
   ## Questions
 
   If you have any questions, comments, or issues feel free to contact ${response.userName} directly through
   
-  email: ${response.userEmail}
+  [Email](${response.userEmail})
 
   or check out my [GitHub](https://github.com/${response.userGitHub})
 
