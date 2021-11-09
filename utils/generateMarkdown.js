@@ -103,7 +103,7 @@ function generateMarkdown(response) {
   
   ## Tests
   
-  To test this application, enter ${response.tests} in the command line
+  ${response.tests}
 
   ## ScreenShot
 
@@ -118,7 +118,7 @@ function generateMarkdown(response) {
   
   ## Questions
 
-  If you have any questions, comments, or issues feel free to contact ${response.userName} directly through
+  If you have any questions, comments, or issues feel free to contact me directly through
   
   Email: ${response.userEmail}
 

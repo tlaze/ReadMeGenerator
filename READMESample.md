@@ -2,7 +2,7 @@
 
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
   
-  # Lazore-Portfolio
+  # Workout-Tracker
   
 
   ## Table Of Contents
@@ -15,58 +15,53 @@
 
   * [License](#license)
 
-  * [Contributors](#contributors)
-
-  * [Tests](#tests)
-
   * [ScreenShots](#screenshots)
 
   * [Links](#links)
+
+  * [Contributors](#contributors)
 
   * [Questions](#questions)
 
   ## Description
 
-  Displays a bio about me, recent works completed, a resume, and links to contact me
+  This application allows users to create customized exercises to add to their workouts. User's have the option of entering cardio or resistance training. Once their workout is complete, users can view their results through multiple graphs. 
   
   ## Installation
 
   To run this application properly, you need to install:
   
-  n/a
+  Node  Express  MongoDB  Mongoose  Morgan  Heroku  MongoDB Atlas
   
 
   ## Usage
   
-  View link below
+  Clone Repository  Run npm i  Run npm start
   
   
   ## License
   
   This Project is licensed by [MIT](https://choosealicense.com/licenses/mit/).
   
-  ## Contributors
-
-  Tom Lazore
   
-  ## Tests
-  
-  To test this application, enter n/a in the command line
-
   ## ScreenShot
 
   ![Screenshot]()
 
   ## Links
 
-  [Live Application](https://tlaze.github.io/Lazore-Portfolio/)
+  [Live Application]()
 
-  [Project Repository](https://github.com/tlaze/Lazore-Portfolio)
-  
+  [Project Repository]()
+
+
+  ## Contributors
+
+  Tom Lazore - Contact Info Below
   
   ## Questions
 
-  If you have any questions, comments, or issues feel free to contact Tom Lazore directly through
+  If you have any questions, comments, or issues feel free to contact me directly through
   
   Email: tomlazore@gmail.com
 
